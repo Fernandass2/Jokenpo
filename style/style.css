@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    background-color: rgb(177, 175, 175);
+    color: black;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Great Vibes', cursive;
+    margin: 20px;
+}
+img{
+    border-radius: 100%;
+}
+
+.papel {
+    color: #fff202;
+}
+
+.tesoura {
+    color: #585858;
+}
+
+.pedra {
+    color: #b97b56;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrucoes-jogo {
+    text-align: center;
+    padding: 20px;
+}
+
+.instrucoes-jogo ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.instrucoes-jogo ul li {
+    display: flex;
+    align-items: center;
+}
+
+.instrucoes-jogo ul li label {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.instrucoes-jogo ul img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#escolha {
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+.botao {
+    margin-bottom: 20px;
+}
+
+.botao button {
+    border: none;
+    border-radius: 100%;
+}
+
+/* Estilos para o modal */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 30px;
+    }
+    img {
+      width: 80px;
+    }
+    #escolha{
+        font-size: 15px;
+    }
+  }

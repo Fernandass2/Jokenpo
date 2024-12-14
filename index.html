@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Pedra, Papel e Tesoura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="portfolio">
+    <meta name="author" content="Fernanda Batista">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="style/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jogo de <label class="pedra">Pedra</label>, <label class="papel">Papel</label> e <label class="tesoura">Tesoura</label></h1>
+        <div class="instrucoes-jogo">
+            <h2>Como jogar Jokenpo</h2>
+            <p>Jogar é super fácil! Olha só essas ilustrações que mostram pedra, tesoura e papel e qual ganha de qual. Não tem segredo!</p>
+            <ul>
+                <li><img src="img/Pedra.png" alt="pedra"><label>Pedra ganha da tesoura</label></li>
+                <li><img src="img/Papel.png" alt="papel"><label>Papel ganha da pedra</label></li>
+                <li><img src="img/Tesoura.png" alt="tesoura"><label>Tesoura ganha do papel</label></li>
+            </ul>
+        </div>
+        <h3 id="escolha">Para jogar, escolha um dos ícones abaixo:</h3>
+        <div class=" botao">
+            <button id="pedra"><img src="img/Pedra.png" alt=""></button>
+            <button id="papel"><img src="img/Papel.png" alt=""></button>
+            <button id="tesoura"><img src="img/Tesoura.png" alt=""></button>
+        </div>
+        <div id="resultado"></div>
+        <!-- Modal para exibir o resultado -->
+        <div id="modal">
+            <div id="modal-content">
+                <span id="close">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jogo.js"></script>
+
+</body>
+
+</html>
